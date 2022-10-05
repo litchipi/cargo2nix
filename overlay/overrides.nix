@@ -228,7 +228,7 @@ in rec {
         # ])
       ];
       # Every dependent also gets this variable?
-      setupHook = buildPackages.writeText "openssl-sys-setup-env.sh" ''
+      setupHook = buildPackages.writeText "pkg-config-setup-env.sh" ''
           pkg-config-setup-env() {
             export PGK_CONFIG_ALLOW_CROSS=1
           }
